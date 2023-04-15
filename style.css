@@ -1,0 +1,15 @@
+.box {
+    width: 200px; 
+    height: 200px;
+    background-color: #dd9911; /* set the background color of the box */
+    border: 10px solid #ccc; /* add a border to the box */
+    border-radius: 10px; 
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* add a drop shadow to the box */
+}
+
+.card {
+    width: 500px;
+    height: 300px;
+    background-color:aqua;
+    border-radius: 11px;
+}
