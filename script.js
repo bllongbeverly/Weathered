@@ -4,11 +4,11 @@ const apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
 // API key
 const apiKey = "486ca9540e11c222a7070b36dcc13a81";
 
-// City and country code
-const city = "London";
-const countryCode = "uk";
+const searchBtn = document.getElementById("search-btn");
+const searchBar = document.getElementById("search-bar");
 
-// Build the API URL with parameters
+searchBtn.addEventListener("click", function() {
+const city = searchBar.value;
 const apiUrl = `${apiEndpoint}?q=${city},${countryCode}&appid=${apiKey}`;
 
 // Make the API call using fetch()
@@ -20,4 +20,6 @@ console.log(data);
 })
 .catch(error => {
 console.error(error);
+});
+
 });
