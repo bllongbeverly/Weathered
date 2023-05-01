@@ -4,7 +4,6 @@ const apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
 // API key
 const apiKey = "486ca9540e11c222a7070b36dcc13a81";
 
-//const searchBar = document.getElementById("search-bar");
 
 //searchBtn.addEventListener ("click",function(){})
 //const city = searchBar.value;
@@ -21,11 +20,12 @@ fetch(apiUrl)
 
 }
 
+
 // Add an event listener to the form to handle user input
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   
-  // Get the user's input from the input element
+
   const city = cityInput.value;
   const apiUrl = `${apiEndpoint}?q=${city}&appid=${apiKey}`;
   
